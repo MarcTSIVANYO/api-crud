@@ -1,0 +1,21 @@
+# Remove the php extension from the filename
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule blog/(.*)$ api/api.php?request=$1 [QSA,NC,L]
+#RewriteRule (recipe/.*) api/app.php?request=$1 [QSA,NC,L] 
+
+RewriteRule ^blog/([a-z0-9\-]+) blog/read_one.php?id=$1 [L]
+
+RewriteRule ^blog  blogs/read.php [L]
+
+#RewriteRule "^blog$" "blog/read.php"
+
+
+#RewriteRule "^products$" "api/product/read.php"
+
+# Set the headers for the restful api
+Header always set Access-Control-Allow-Origin "http://localhost:4200"
+Header always set Access-Control-Max-Age "1000"
+Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding"
+Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
