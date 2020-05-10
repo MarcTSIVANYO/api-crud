@@ -3,3 +3,5 @@
 # compiled output
 database.php
 blog.php
+index.php
+.htaccess
