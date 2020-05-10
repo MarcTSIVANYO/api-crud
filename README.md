@@ -16,3 +16,6 @@ open your browser and put
 You should have json file of all products available in the database
 
 If anything goes wrong, check your set up or open an Issue here
+
+
+Email :marctsivanyo@gmail.com
