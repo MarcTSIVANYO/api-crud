@@ -59,10 +59,8 @@ function create(){
     // execute query
     if($stmt->execute()){
         return true;
-    }
-  
-    return false;
-      
+    } 
+    return false;  
 }
 
 // used when filling up the update product form
