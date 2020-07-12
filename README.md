@@ -1,5 +1,5 @@
-# angular-crud-api
-This is the REST API created for angular9-crud frontend
+# API CRUD | Using Angular
+This is the REST API created for api-crud backend
 
 # How to Run the Project
 
